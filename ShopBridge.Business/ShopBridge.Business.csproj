@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ShopBridge.Data\ShopBridge.Data.csproj" />
+    <ProjectReference Include="..\ShopBridge.Interface\ShopBridge.Interface.csproj" />
+    <ProjectReference Include="..\ShopBridge.Model\ShopBridge.Model.csproj" />
+  </ItemGroup>
+
+</Project>
