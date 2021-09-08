@@ -1,0 +1,21 @@
+USE [ShopBridge]
+GO
+/****** Object:  Table [dbo].[Inventory]    Script Date: 9/8/2021 12:46:37 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Inventory](
+	[ItemID] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [varchar](50) NOT NULL,
+	[Description] [varchar](500) NULL,
+	[Price] [decimal](18, 2) NULL,
+	[Qty] [int] NULL,
+	[Make] [varchar](20) NULL,
+	[MakeYear] [int] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[ItemID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
