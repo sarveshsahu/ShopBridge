@@ -1,6 +1,6 @@
 USE [ShopBridge]
 GO
-/****** Object:  Table [dbo].[Inventory]    Script Date: 9/8/2021 12:46:37 PM ******/
+/****** Object:  Table [dbo].[Inventory]    Script Date: 9/8/2021 12:52:38 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -18,4 +18,26 @@ PRIMARY KEY CLUSTERED
 	[ItemID] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
+GO
+SET IDENTITY_INSERT [dbo].[Inventory] ON 
+GO
+INSERT [dbo].[Inventory] ([ItemID], [Name], [Description], [Price], [Qty], [Make], [MakeYear]) VALUES (1, N'Sony Bravia 32 inches LED TV 32W6103', N'Sony Bravia 80 cm (32 inches) HD Ready Smart LED TV 32W6103 (Black) (2021 Model)', CAST(28490.00 AS Decimal(18, 2)), 5, N'SAMSUNG', 2010)
+GO
+INSERT [dbo].[Inventory] ([ItemID], [Name], [Description], [Price], [Qty], [Make], [MakeYear]) VALUES (2, N'Toshiba 126 cm', N'Toshiba 126 cm (50 inches) Vidaa OS Series 4K Ultra HD Smart LED TV 50U5050 (Black) (2020 Model) | With Dolby Vision and ATMOS', CAST(25490.00 AS Decimal(18, 2)), 5, N'Toshiba', 2020)
+GO
+INSERT [dbo].[Inventory] ([ItemID], [Name], [Description], [Price], [Qty], [Make], [MakeYear]) VALUES (3, N'LG 126 cm', N'LG 126 cm (50 inches) Vidaa OS Series 4K Ultra HD Smart LED TV 50U5050 (Black) (2020 Model) | With Dolby Vision and ATMOS', CAST(25490.00 AS Decimal(18, 2)), 5, N'LG', 2010)
+GO
+INSERT [dbo].[Inventory] ([ItemID], [Name], [Description], [Price], [Qty], [Make], [MakeYear]) VALUES (4, N'Pixler 126 cm update', N'Pixler 126 cm (50 inches) Vidaa OS Series 4K Ultra HD Smart LED TV 50U5050 (Black) (2020 Model) | With Dolby Vision and ATMOS', CAST(25490.00 AS Decimal(18, 2)), 5, N'Pixler', 2019)
+GO
+INSERT [dbo].[Inventory] ([ItemID], [Name], [Description], [Price], [Qty], [Make], [MakeYear]) VALUES (5, N'SONY 126 cm', N'SONY 126 cm (50 inches) Vidaa OS Series 4K Ultra HD Smart LED TV 50U5050 (Black) (2020 Model) | With Dolby Vision and ATMOS', CAST(25490.00 AS Decimal(18, 2)), 5, N'SONY', 2019)
+GO
+INSERT [dbo].[Inventory] ([ItemID], [Name], [Description], [Price], [Qty], [Make], [MakeYear]) VALUES (6, N'MI 126 cm', N'MI 126 cm (50 inches) Vidaa OS Series 4K Ultra HD Smart LED TV 50U5050 (Black) (2020 Model) | With Dolby Vision and ATMOS', CAST(25490.00 AS Decimal(18, 2)), 5, N'MI', 2019)
+GO
+INSERT [dbo].[Inventory] ([ItemID], [Name], [Description], [Price], [Qty], [Make], [MakeYear]) VALUES (10, N'Test Name 1', N'Test Description 1', CAST(20000.00 AS Decimal(18, 2)), 5, N'Test Make 1', 2020)
+GO
+INSERT [dbo].[Inventory] ([ItemID], [Name], [Description], [Price], [Qty], [Make], [MakeYear]) VALUES (12, N'Test Name 10', N'Test Description 3', CAST(500.00 AS Decimal(18, 2)), 15, N'Test Make 3', 2020)
+GO
+INSERT [dbo].[Inventory] ([ItemID], [Name], [Description], [Price], [Qty], [Make], [MakeYear]) VALUES (15, N'Test 126 cm', N'Test 126 cm (50 inches) Vidaa OS Series 4K Ultra HD Smart LED TV 50U5050 (Black) (2020 Model) | With Dolby Vision and ATMOS', CAST(25490.00 AS Decimal(18, 2)), 5, N'LG', 2010)
+GO
+SET IDENTITY_INSERT [dbo].[Inventory] OFF
 GO
